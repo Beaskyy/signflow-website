@@ -20,7 +20,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className="w-[121px] h-11 rounded-full bg-[#222222] text-white flex justify-center items-center gap-1">
+        <div className="w-[121px] h-11 rounded-full bg-[#222222] text-white flex justify-center items-center gap-1 hover:shadow-2xl cursor-pointer">
           <p className="text-base tracking-[-0.3px] font-medium">Try Free</p>
           <ArrowRight className="size-5" />
         </div>

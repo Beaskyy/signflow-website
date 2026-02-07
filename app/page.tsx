@@ -3,6 +3,7 @@ import { CTA } from "@/components/cta";
 import { FAQ } from "@/components/faqs";
 import { FeaturShowCase } from "@/components/feature-showcase";
 import { Features } from "@/components/features";
+import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import { Hero } from "@/components/hero";
 import { HowItWorks } from "@/components/how-it-works";
@@ -20,6 +21,7 @@ export default function Home() {
       <CommunityValidation />
       <FAQ />
       <CTA />
+      <Footer />
     </main>
   );
 }

@@ -38,7 +38,7 @@ export const HowItWorks = () => {
           </div>
 
           {/* ----- Column 2: Processing & Iteration ----- */}
-          <div className="flex flex-col gap-6 h-full">
+          <div className="flex flex-col gap-3 h-full">
             <div className="flex-1 bg-[#FBF7EBE5] rounded-xl p-8 flex flex-col justify-center items-center text-center">
               <h3 className="md:text-2xl text-xl font-medium text-black mb-3">
                 Processing
@@ -66,7 +66,7 @@ export const HowItWorks = () => {
             <Image src="/hello.png" alt="hello" width={303} height={362} />
             </div>
 
-            <div className="mt-4">
+            <div className="mt-6">
               <h3 className="md:text-2xl text-xl font-medium text-black mb-2">Output</h3>
               <p className="text-[#7C7C7C] text-sm tracking-[-0.2px]">
                 Messages are delivered as sign-language animation or text,

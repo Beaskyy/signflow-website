@@ -6,7 +6,7 @@ import Navigation from "./navigation";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center h-20 p-5">
+    <div className="flex justify-between items-center h-20 p-5 bg-[#F2F4F6]">
       <Image src="/logo.svg" alt="logo" width={147} height={40} className="md:w-[147px] md:h-[40px] w-[100px] h-[28px]" />
       <div className="hidden md:flex items-center gap-10">
         <div className="flex items-center gap-8">

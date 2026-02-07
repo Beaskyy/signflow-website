@@ -49,7 +49,7 @@ export const FeaturShowCase = () => {
 
   return (
     <div className="md:p-[112px] pt-[68px] flex flex-col items-center gap-20">
-      <h2 className="md:text-5xl text-3xl font-medium text-[#D4AF37] tracking-[-0.3px] text-center">
+      <h2 className="md:text-5xl text-4xl font-medium text-[#D4AF37] tracking-[-0.3px] text-center">
         <span className="text-black">One tool,</span> <br /> Multiple ways to
         communicate
       </h2>

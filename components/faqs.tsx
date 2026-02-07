@@ -1,33 +1,39 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const faqData = [
   {
     question: "Is SignFlow really free to use?",
-    answer: "Yes. We believe accessibility is a human right, not a luxury. The core translation features—including text, voice, and live chat—are free for individual users. We sustain the platform through ethical partnerships and enterprise APIs for large organisations."
+    answer:
+      "Yes. We believe accessibility is a human right, not a luxury. The core translation features—including text, voice, and live chat—are free for individual users. We sustain the platform through ethical partnerships and enterprise APIs for large organisations.",
   },
   {
     question: "How accurate is SignFlow?",
-    answer: "SignFlow utilizes advanced machine learning models trained on diverse datasets to ensure high accuracy. However, like all AI, it is constantly learning and improving through user feedback and community validation."
+    answer:
+      "SignFlow utilizes advanced machine learning models trained on diverse datasets to ensure high accuracy. However, like all AI, it is constantly learning and improving through user feedback and community validation.",
   },
   {
     question: "Which sign languages are supported?",
-    answer: "Currently, we support American Sign Language (ASL) and British Sign Language (BSL), with active development for French Sign Language (LSF) and others based on community demand."
+    answer:
+      "Currently, we support American Sign Language (ASL) and British Sign Language (BSL), with active development for French Sign Language (LSF) and others based on community demand.",
   },
   {
     question: "Is SignFlow “AI-powered”?",
-    answer: "Yes, we use a combination of computer vision for recognition and Natural Language Processing (NLP) to understand the grammatical structure of sign languages, ensuring translations are meaningful rather than just word-for-word."
+    answer:
+      "Yes, we use a combination of computer vision for recognition and Natural Language Processing (NLP) to understand the grammatical structure of sign languages, ensuring translations are meaningful rather than just word-for-word.",
   },
   {
     question: "Why is SignFlow a web app and not a mobile app?",
-    answer: "Building for the web first allows us to make the tool accessible on any device with a browser—laptop, tablet, or phone—without requiring downloads or specific operating system versions."
+    answer:
+      "Building for the web first allows us to make the tool accessible on any device with a browser—laptop, tablet, or phone—without requiring downloads or specific operating system versions.",
   },
   {
     question: "Does SignFlow replace human interpreters?",
-    answer: "No. SignFlow is designed for everyday, casual communication. For medical, legal, or high-stakes situations, we always recommend and advocate for professional human interpreters."
-  }
+    answer:
+      "No. SignFlow is designed for everyday, casual communication. For medical, legal, or high-stakes situations, we always recommend and advocate for professional human interpreters.",
+  },
 ];
 
 export const FAQ = () => {
@@ -41,7 +47,6 @@ export const FAQ = () => {
   return (
     <section className="w-full md:py-20 p-5 md:px-[112px] bg-white">
       <div className="max-w-3xl mx-auto">
-        
         {/* Header */}
         <div className="text-center mb-10 tracking-[-1px]">
           <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">
@@ -58,8 +63,8 @@ export const FAQ = () => {
             const isOpen = openIndex === index;
 
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-[#FBF7EB] rounded-xl overflow-hidden transition-all duration-200"
               >
                 <button
@@ -70,10 +75,10 @@ export const FAQ = () => {
                     {item.question}
                   </span>
                   {/* Chevron Icon with rotation */}
-                  <ChevronDown 
+                  <ChevronDown
                     className={`w-6 h-6 text-black transition-transform duration-300 ${
-                      isOpen ? 'rotate-180' : 'rotate-0'
-                    }`} 
+                      isOpen ? "rotate-180" : "rotate-0"
+                    }`}
                   />
                 </button>
 
@@ -81,9 +86,9 @@ export const FAQ = () => {
                   Smooth Height Animation Wrapper 
                   We use grid-template-rows to animate height from 0 to auto
                 */}
-                <div 
+                <div
                   className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
-                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
                   <div className="overflow-hidden">
@@ -96,7 +101,6 @@ export const FAQ = () => {
             );
           })}
         </div>
-
       </div>
     </section>
   );

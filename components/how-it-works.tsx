@@ -1,10 +1,5 @@
-import { Plus, Mic, Volume2, Send, X, MoreHorizontal } from "lucide-react";
 import Image from "next/image";
 
-// 1. Define static heights so the server and client render the exact same UI
-const WAVEFORM_HEIGHTS = [
-  8, 14, 10, 18, 20, 12, 6, 16, 14, 10, 8, 18, 12, 6, 14, 10, 8, 16, 10, 12,
-];
 
 export const HowItWorks = () => {
   return (
@@ -16,7 +11,7 @@ export const HowItWorks = () => {
         </h2>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 h-auto lg:h-[500px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 h-auto lg:max-h-[500px]">
           {/* ----- Column 1: Input ----- */}
           <div className="bg-[#FBF7EBE5] rounded-xl p-6 flex flex-col h-full relative overflow-hidden group">
             <div className="flex-1 flex flex-col items-center justify-center relative min-h-[300px]">

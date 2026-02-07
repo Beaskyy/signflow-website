@@ -1,4 +1,5 @@
 import { CommunityValidation } from "@/components/community-validation";
+import { FAQ } from "@/components/faqs";
 import { FeaturShowCase } from "@/components/feature-showcase";
 import { Features } from "@/components/features";
 import Header from "@/components/header";
@@ -16,6 +17,7 @@ export default function Home() {
       <HowItWorks />
       <RealWorldUse />
       <CommunityValidation />
+      <FAQ />
     </main>
   );
 }

@@ -8,7 +8,7 @@ export const Hero = () => {
         <div className="flex flex-col justify-center items-center gap-6">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-              <h1 className="text-black md:text-5xl text-3xl font-semibold tracking-[-1.5px]">
+              <h1 className="text-black md:text-5xl text-4xl font-semibold tracking-[-1.5px]">
                 Supporting communication across sign, speech, and text.
               </h1>
               <p className="md:text-base text-sm text-[#333333] tracking-[-0.3px]">

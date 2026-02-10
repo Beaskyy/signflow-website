@@ -1,9 +1,16 @@
+ "use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const CTA = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.55, ease: "easeOut" }}
       className="relative w-full py-10 md:py-24 md:pt-8 pb-24 flex flex-col items-center justify-center overflow-hidden"
       style={{
         background: `
@@ -14,7 +21,13 @@ export const CTA = () => {
     >
       <div className="container mx-auto px-4 text-center z-10">
         {/* Logo / Icon Area */}
-        <div className="relative w-16 h-16 md:w-24 md:h-24 mx-auto md:mb-16 mb-10">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+          className="relative w-16 h-16 md:w-24 md:h-24 mx-auto md:mb-16 mb-10"
+        >
           <Image
             src="/logo.png"
             alt="Logo"
@@ -24,26 +37,45 @@ export const CTA = () => {
             // Fallback style just to visualize space if image is missing
             style={{ color: "transparent" }}
           />
-        </div>
+        </motion.div>
 
         {/* Headline */}
-        <h2 className="text-xl md:text-5xl lg:text-[55px] font-semibold text-black tracking-[-1.5] md:tracking-[-2.5px] mb-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.45, delay: 0.15, ease: "easeOut" }}
+          className="text-xl md:text-5xl lg:text-[55px] font-semibold text-black tracking-[-1.5] md:tracking-[-2.5px] mb-4"
+        >
           Ready to Flow? No App Store Required.
-        </h2>
+        </motion.h2>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-[22px] text-[#333333] mb-10 max-w-xl mx-auto font-normal tracking-[-0.42px]">
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
+          className="text-lg md:text-[22px] text-[#333333] mb-10 max-w-xl mx-auto font-normal tracking-[-0.42px]"
+        >
           Access real-time translation instantly on any device.
-        </p>
+        </motion.p>
 
         {/* Button */}
-        <Link
-          href="/get-started"
-          className="inline-block bg-[#222222] text-white text-base md:text-lg font-medium px-10 py-3.5 rounded-full transition-transform duration-200 hover:scale-105 hover:bg-black hover:shadow-lg"
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
         >
-          Get started
-        </Link>
+          <Link
+            href="/get-started"
+            className="inline-block bg-[#222222] text-white text-base md:text-lg font-medium px-10 py-3.5 rounded-full transition-transform duration-200 hover:scale-105 hover:bg-black hover:shadow-lg"
+          >
+            Get started
+          </Link>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };

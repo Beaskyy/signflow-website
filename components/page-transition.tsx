@@ -1,10 +1,12 @@
  "use client";
 
  import { usePathname } from "next/navigation";
- import { AnimatePresence, motion } from "framer-motion";
+ import { AnimatePresence, motion, type Variants, type Transition } from "framer-motion";
  import React from "react";
 
- const variants = {
+ const easeOut: Transition["ease"] = [0.16, 1, 0.3, 1];
+
+ const variants: Variants = {
    initial: {
      opacity: 0,
      y: 16,
@@ -14,7 +16,7 @@
      y: 0,
      transition: {
        duration: 0.4,
-       ease: [0.16, 1, 0.3, 1],
+       ease: easeOut,
      },
    },
    exit: {
@@ -22,7 +24,7 @@
      y: -12,
      transition: {
        duration: 0.25,
-       ease: [0.16, 1, 0.3, 1],
+       ease: easeOut,
      },
    },
  };

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const HowItWorks = () => {
   return (
-    <section className="w-full md:py-[68px] md:px-[112px] p-5 bg-white">
+    <section id="how-it-works" className="w-full md:py-[68px] md:px-[112px] p-5 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-medium tracking-[-1.5px] text-center text-[#333333] mb-12">

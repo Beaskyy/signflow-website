@@ -45,7 +45,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section className="w-full md:py-20 p-5 md:px-[112px] bg-white">
+    <section id="faq" className="w-full md:py-20 p-5 md:px-[112px] bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 tracking-[-1px]">

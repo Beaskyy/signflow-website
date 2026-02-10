@@ -1,4 +1,5 @@
 import { AboutDAF } from "@/components/aboutDAF";
+import { CorePurpose } from "@/components/core-purpose";
 import { CTA } from "@/components/cta";
 import { FAQ } from "@/components/faqs";
 import { Footer } from "@/components/footer";
@@ -9,6 +10,7 @@ export default function About() {
     <main>
       <Header />
       <AboutDAF />
+      <CorePurpose />
       <FAQ />
       <CTA />
       <Footer />

@@ -7,7 +7,15 @@ import Navigation from "./navigation";
 const Header = () => {
   return (
     <div className="flex justify-between items-center h-20 p-5 bg-[#F2F4F6]">
-      <Image src="/logo.svg" alt="logo" width={147} height={40} className="md:w-[147px] md:h-[40px] w-[100px] h-[28px]" />
+      <Link href="/">
+        <Image
+          src="/logo.svg"
+          alt="logo"
+          width={147}
+          height={40}
+          className="md:w-[147px] md:h-[40px] w-[100px] h-[28px]"
+        />
+      </Link>
       <div className="hidden md:flex items-center gap-10">
         <div className="flex items-center gap-8">
           {navigation.map((item: { name: string; href: string }) => (
@@ -20,13 +28,17 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <Link href="https://sign-flow-sandy.vercel.app/" target="_blank" className="w-[121px] h-11 rounded-full bg-[#222222] text-white flex justify-center items-center gap-1 hover:shadow-2xl cursor-pointer">
+        <Link
+          href="https://sign-flow-sandy.vercel.app/"
+          target="_blank"
+          className="w-[121px] h-11 rounded-full bg-[#222222] text-white flex justify-center items-center gap-1 hover:shadow-2xl cursor-pointer"
+        >
           <p className="text-base tracking-[-0.3px] font-medium">Try Free</p>
           <ArrowRight className="size-5" />
         </Link>
       </div>
       <div className="md:hidden">
-      <Navigation />
+        <Navigation />
       </div>
     </div>
   );

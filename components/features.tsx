@@ -26,7 +26,7 @@ const FEATURES_DATA = [
 
 export const Features = () => {
   return (
-    <div className="md:p-[112px] pt-16 p-5 flex flex-col gap-[89px]">
+    <div id="features" className="md:p-[112px] pt-16 p-5 flex flex-col gap-[89px]">
       <div className="flex flex-col gap-3 justify-center items-center text-center">
         <h2 className="md:text-5xl font-medium text-4xl text-black tracking-[-0.3px] max-w-[974px]">
           Technology-assisted sign-language translation, designed with

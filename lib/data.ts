@@ -1,15 +1,15 @@
 export const navigation = [
   {
     name: "Features",
-    href: "/features",
+    href: "#features",
   },
   {
     name: "How it works",
-    href: "/how-it-works",
+    href: "#how-it-works",
   },
   {
     name: "Faq",
-    href: "/faq",
+    href: "#faq",
   },
   {
     name: "About",

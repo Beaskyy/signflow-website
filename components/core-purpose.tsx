@@ -83,22 +83,45 @@ export const CorePurpose = () => {
           {/* 1. Our Mission */}
           <SectionItem 
             title="Our Mission"
-            description="To advance access, inclusion, and opportunity for the Deaf and hard-of-hearing community through education, advocacy, and practical initiatives."
+            description="To advance access, inclusion, and opportunity for Deaf and hard-of-hearing communities through education, awareness, advocacy, and practical accessibility initiatives."
           />
 
           {/* 2. Our Vision (Reversed Layout) */}
           <SectionItem 
             title="Our Vision"
-            description="To support environments where communication access is actively considered, resourced, and embedded."
+            description="To support systems and environments where communication access is actively considered, resourced, and embedded for deaf and hard-of-hearing communities"
             reverse={true}
           />
 
           {/* 3. The Approach */}
-          <SectionItem 
-            title="The Approach"
-            description="We take a measured, research-informed approach to exploring what digital tools can realistically support."
-          />
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20">
+            {/* Image / Graphic Side */}
+            <div className="w-full md:w-1/2">
+              <div className="bg-[#EAEAEA] rounded-[24px] aspect-4/3 flex items-center justify-center w-full">
+                  <PlaceholderGraphic />
+              </div>
+            </div>
 
+            {/* Text Content Side */}
+            <div className="w-full md:w-1/2">
+              <h3 className="text-xl font-medium text-black mb-4">
+                Our Approach
+              </h3>
+              <div className="text-gray-500 text-sm md:text-base leading-relaxed max-w-[564px] flex flex-col gap-4">
+                <p>We recognise that sign languages are:</p>
+                <ul className="list-disc pl-5 flex flex-col gap-1">
+                  <li>Visually rich</li>
+                  <li>Culturally specific</li>
+                  <li>Grammatically complex</li>
+                </ul>
+                <p>
+                  DAF and SignFlow takes a measured, research-informed approach to exploring what
+                  digital tools can realistically support, while continuing parallel work through
+                  education, programmes, and advocacy.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>

@@ -8,7 +8,7 @@ export const navigation = [
     href: "#how-it-works",
   },
   {
-    name: "Faq",
+    name: "FAQ",
     href: "#faq",
   },
   {

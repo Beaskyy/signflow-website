@@ -2,25 +2,25 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    image: "/person.svg",
+    image: "/testimonial_person_1.png",
     quote:
-      "“I no longer need my sister to come to the bank with me. I have my independence back.”",
+      "“I can handle simple interactions on my own without asking someone else to step in. That makes a real difference.”",
     name: "Alex Carter",
     role: "Graphics Designer, Lagos",
   },
   {
-    image: "/person.svg",
+    image: "/testimonial_person_2.png",
     quote:
-      "“I no longer need my sister to come to the bank with me. I have my independence back.”",
-    name: "Alex Carter",
-    role: "Graphics Designer, Lagos",
+      "“It’s helpful to see tools that are thinking about sign-language communication.”",
+    name: "Blessing Okoro",
+    role: "Accessibility Advocate",
   },
   {
-    image: "/person.svg",
+    image: "/testimonial_person_3.png",
     quote:
-      "“I no longer need my sister to come to the bank with me. I have my independence back.”",
-    name: "Alex Carter",
-    role: "Graphics Designer, Lagos",
+      "“So simple to use and it's making my everyday conversations smoother.”",
+    name: "Tunde Williams",
+    role: "Community Member",
   },
 ];
 

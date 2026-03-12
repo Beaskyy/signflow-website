@@ -49,19 +49,24 @@ export const FeaturShowCase = () => {
 
   return (
     <div className="md:p-[112px] pt-[68px] flex flex-col items-center gap-20">
-      <h2 className="md:text-5xl text-4xl font-medium text-[#D4AF37] tracking-[-0.3px] text-center">
-        <span className="text-black">One tool,</span> <br /> Multiple ways to
-        communicate
-      </h2>
+      <div className="flex flex-col gap-4 text-center">
+        <h3 className="md:text-lg text-base text-[#D4AF37] font-semibold tracking-wide uppercase">
+          What SignFlow Enables
+        </h3>
+        <h2 className="md:text-5xl text-4xl font-medium tracking-[-0.3px]">
+          <span className="text-black">One tool.</span> <br /> Multiple ways to
+          communicate.
+        </h2>
+      </div>
 
       <section className="py-20 px-5 max-w-7xl mx-auto flex flex-col gap-[89px]">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-10">
             <div>
-              <p className="text-xl md:text-[28px] text-black tracking-[-1.8px]">
-                SignFlow is for practical, everyday use, not high-risk or
-                specialist interpreting.
+              <p className="text-xl md:text-[28px] text-black tracking-[-1.8px] leading-tight">
+                SignFlow is built for practical, everyday interactions, not high-risk or specialist
+                interpreting scenarios.
               </p>
             </div>
 

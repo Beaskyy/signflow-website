@@ -5,34 +5,35 @@ import { ChevronDown } from "lucide-react";
 
 const faqData = [
   {
-    question: "Is SignFlow really free to use?",
+    question: "Is SignFlow free to use?",
     answer:
-      "Yes. We believe accessibility is a human right, not a luxury. The core translation features—including text, voice, and live chat—are free for individual users. We sustain the platform through ethical partnerships and enterprise APIs for large organisations.",
+      "Yes. Core features are available for free.",
   },
   {
     question: "How accurate is SignFlow?",
     answer:
-      "SignFlow utilizes advanced machine learning models trained on diverse datasets to ensure high accuracy. However, like all AI, it is constantly learning and improving through user feedback and community validation.",
+      "SignFlow prioritises: Meaning over literal translation, Structural awareness of sign languages, Continuous refinement through testing and feedback. We are transparent about limitations and do not claim perfect accuracy.",
   },
   {
     question: "Which sign languages are supported?",
     answer:
-      "Currently, we support American Sign Language (ASL) and British Sign Language (BSL), with active development for French Sign Language (LSF) and others based on community demand.",
+      `SignFlow is designed to support multiple sign languages. Current development focuses on: Nigerian Sign Language (NSL) and American Sign Language (ASL). Additional languages including British Sign Language (BSL) will be explored based
+on community demand`,
   },
   {
     question: "Is SignFlow “AI-powered”?",
     answer:
-      "Yes, we use a combination of computer vision for recognition and Natural Language Processing (NLP) to understand the grammatical structure of sign languages, ensuring translations are meaningful rather than just word-for-word.",
+      "SignFlow uses elements of artificial intelligence including machine-learning models for gesture and speech processing alongside rule-based linguistic systems. We avoid hype and make no claims of full automation or human-level interpretation. Accuracy, trust, and accountability come first.",
   },
   {
     question: "Why is SignFlow a web app and not a mobile app?",
     answer:
-      "Building for the web first allows us to make the tool accessible on any device with a browser—laptop, tablet, or phone—without requiring downloads or specific operating system versions.",
+      "A web app allows: Instant access, Cross-device compatibility, Lower barriers in low-resource settings, Faster iteration and updates.",
   },
   {
     question: "Does SignFlow replace human interpreters?",
     answer:
-      "No. SignFlow is designed for everyday, casual communication. For medical, legal, or high-stakes situations, we always recommend and advocate for professional human interpreters.",
+      "No. SignFlow is intended for informal, everyday communication. Professional interpreters remain essential in legal, medical, and other high-risk contexts.",
   },
 ];
 
